@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding-top: 3rem;
+}
+
+.container {
+  max-width: 550px;
+  height: 550px;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 2px solid #333;
+  font-size: 1.2rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form input[type="color"] {
+  width: 60px;
+  height: 40px;
+  outline: none;
+}
+
+form select {
+  padding: 0.8rem 3rem 0.8rem 0.5rem;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.btn {
+  background: transparent;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #333;
+  color: #fff;
+}
+
+#colors {
+  display: flex;
+}
+.stripe {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-stripe {
+  height: 375px;
+}
+
+.color-name {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 1rem;
+    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form div {
+  }
+
+  form input[type="color"] {
+    width: 50px;
+    height: 30px;
+  }
+
+  form select {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .color-name {
+    font-size: 0.9rem;
+  }
+}
